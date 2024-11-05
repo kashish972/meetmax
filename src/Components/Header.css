@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  align-items: center; /* Vertically centers the items */
+  justify-content: space-between; /* Space between logo and search box */
+  padding: 10px 20px; /* Add some padding */
+  background-color: #f4f4f4; /* Optional: background color */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Vertically centers the logo and text */
+}
+
+.logo-img {
+  width: 40px; /* Adjust logo size */
+  height: 40px; /* Adjust logo size */
+  margin-right: 10px; /* Decreased space between logo and text */
+}
+
+.search-container {
+  flex: 1; /* Allows the search box to take available space */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center search box */
+}
+
+.search-box {
+  width: 50%; /* Full width of the container */
+  padding: 10px; /* Padding for the search box */
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 20px; /* Rounded corners */
+  margin-left: 10px; /* Decreased gap between logo and search box */
+}
+
+.user-profile {
+  display: flex;
+  align-items: center; /* Center vertically */
+  margin-left: 20px; /* Space between search box and user profile */
+}
+
+.profile-image {
+  width: 40px; /* Circle size */
+  height: 40px; /* Circle size */
+  border-radius: 50%; /* Make it circular */
+  overflow: hidden; /* Ensures the image fits within the circle */
+  margin-right: 10px; /* Space between image and name */
+}
+
+.profile-img {
+  width: 100%; /* Full width of the circle */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.user-name {
+  font-size: 16px; /* Font size for the user name */
+}

@@ -1,0 +1,24 @@
+.footer {
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .sign-up,
+  .log-in {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .sign-up {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .log-in {
+    background-color: #f4f4f4;
+    color: #000;
+  }
+  

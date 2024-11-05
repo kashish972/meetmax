@@ -1,0 +1,53 @@
+.sidebar {
+  flex: 0.2;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Space below the logo */
+}
+
+.logo-img {
+  width: 40px; /* Adjust the size of the logo */
+  height: 40px;
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.logo-text {
+  font-size: 1.5em; /* Adjust font size */
+  color: #333; /* Color of the logo text */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: black;
+  padding: 10px; 
+  background-color: #fff; 
+  border-radius: 8px; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+
+.sidebar li:hover {
+  background-color: #4a6d9d; 
+  color: white; 
+}
+
+.sidebar li svg {
+  margin-right: 8px; 
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+      display: none;
+  }
+}

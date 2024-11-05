@@ -1,0 +1,12 @@
+.right-sidebar {
+    flex: 0.2;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .right-sidebar {
+      display: none;
+    }
+  }
+  
