@@ -1,7 +1,8 @@
 .main-feed-container {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
+  width: 50%;
 }
 
 .main-content {
@@ -103,7 +104,7 @@
 
 .main-content {
   display: flex;
-  width: 100%;
+  width: 80%;
 }
 
 .main-feed {
