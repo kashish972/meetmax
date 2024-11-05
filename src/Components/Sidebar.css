@@ -1,56 +1,82 @@
+/* Sidebar Styles */
 .sidebar {
-    flex: 0.2;
-    background-color: #f4f4f4;
-    padding: 20px;
-   
+  flex: 0.3; /* Adjusted to take at least 30% of the screen */
+  background-color: #f4f4f4;
+  padding: 20px;
+  min-width: 250px; /* Ensure the sidebar has a minimum width */
+}
+
+/* Logo Styles */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Increased space below the logo for better separation */
+}
+
+.logo-img {
+  width: 40px; /* Adjust size of the logo */
+  height: 40px;
+  margin-right: 10px; /* Space between the logo and the text */
+}
+
+.logo-text {
+  font-size: 1.5em; /* Adjust font size */
+  color: #333; /* Color of the logo text */
+}
+
+/* Sidebar List Styles */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Remove default margin */
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: #333; /* Darker text color */
+  padding: 10px;
+  background-color: #fff; /* Default background for other items */
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.feed-item {
+  background-color: #b0c4de; /* Greyish blue color */
+  color: #333; /* Keep text color the same */
+}
+
+.sidebar li:hover {
+  background-color: #4a6d9d;
+  color: white;
+}
+
+.sidebar li svg {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* Notification Badge Styles */
+.notification-badge {
+  display: inline-block;
+  background-color: red; /* Red color for the badge */
+  color: white; /* White text color */
+  border-radius: 50%; /* Make it circular */
+  padding: 2px 6px; /* Padding around the text */
+  font-size: 0.8em; /* Slightly smaller text */
+  margin-left: 8px; /* Space between text and badge */
+  position: relative; /* Positioning context for better placement */
+  top: -2px; /* Adjusts position vertically */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .sidebar {
+    flex: 0.25; /* Reduce size for smaller screens */
   }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; /* Space below the logo */
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* Hide sidebar on small screens */
   }
-  
-  .logo-img {
-    width: 40px; /* Adjust the size of the logo */
-    height: 40px;
-    margin-right: 10px; /* Space between logo and text */
-  }
-  
-  .logo-text {
-    font-size: 1.5em; /* Adjust font size */
-    color: #333; /* Color of the logo text */
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .sidebar li {
-    margin-bottom: 15px;
-    cursor: pointer;
-    color: black;
-    padding: 10px; 
-    background-color: #fff; 
-    border-radius: 8px; 
-    transition: background-color 0.3s, color 0.3s; 
-  
-  }
-  
-  
-  .sidebar li:hover {
-    background-color: #4a6d9d; 
-    color: white; 
-  }
-  
-  .sidebar li svg {
-    margin-right: 8px; 
-  }
-  
-  @media (max-width: 768px) {
-    .sidebar {
-        display: none;
-    }
-  }
-  
+}
